@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SIS</title>
+    <style>
+        body {
+            background-color: #000;
+            overflow: hidden;
+            perspective: 400px; /* Adjusted for better perspective effect */
+            font-family: 'Arial', sans-serif;
+            color: white; /* #feda4a */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .crawl {
+            position: relative;
+            width: 100%;
+            transform-origin: 50% 100%;
+            animation: crawl 50s linear;
+            text-align: center; /* Center text */
+            font-size: 20px; /* Increased font size */
+        }
+
+        @keyframes crawl {
+            0% {
+                transform: rotateX(35deg) translateY(50vh);
+            }
+            100% {
+                transform: rotateX(90deg) translateY(-3000px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="crawl">
+    <p>
+        A long time ago, in a galaxy far,<br>
+        far away....
+    </p>
+    <h1>UNDP</h1>
+    <h2>Beureu of Management Services</h2>
+    <h2>Information Technology Management</h2>
+    <h2>Smart Infrastructure Services (SIS)</h2>
+    <p>
+        The Smart Infrastructure Services supports and guides UNDP Country Offices and partners to leverage technology <br>
+        to deliver programmatic goals. By delivering a range of high-quality solutions and services for Green Energy <br>
+        and ICT systems the team helps build local capacity and inspire innovation and encourage adoption across UNDP, <br>
+        governments, NGO’s and the private sector. <br>
+        <br>
+        Technology Innovation Services provide long-term information and communication technology solutions for UNDP <br>
+        and UN partners aiming to integrate modern and reliable technology services TIS manages corporate applications <br>
+        to enhance the user sign-in experience; Cloud hosting; global licensing services; Microsoft software subscriptions; <br>
+        global network security operations for UNDP, and video conference and telephony solutions worldwide. <br>
+        Smart Infrastructure Services is located in New York and Copenhagen. <br>
+    </p>
+    <p>
+        &nbsp;<br>
+        &nbsp;<br>
+        &nbsp;<br>
+        &nbsp;<br>
+        &nbsp;<br>
+    </p>
+</div>
+
+<!-- audio -->
+<audio autoplay loop>
+    <source src="starwar.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    // Redirect to the next page on click
+    document.addEventListener('click', function() {
+        window.location.href = 'home4.html';
+    });
+
+    // Automatically redirect after 5 seconds
+    setTimeout(function() {
+        window.location.href = 'home4.html';
+    }, 9000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big5</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background: url('big5.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .badge {
+            position: absolute;
+            cursor: pointer;
+            /* Placeholder size, you need to adjust the width and height according to actual badge sizes */
+            width: 100px; 
+            height: 100px;
+            background-color: rgba(0, 0, 255, 0); /* Transparent background to show clickable area */
+        }
+        .undt { top: 20%; left: 69%; }
+        .sf-nms { top: 43%; left: 85%; }
+        .sf7s { top: 80%; left: 80%; }
+        .sf-s { top: 80%; left: 59%; }
+        .sf-daas { top: 43%; left: 53%; }
+    </style>
+</head>
+<body>
+    <a href="https://dashboard.iot.undp.org" class="badge undt"></a>
+    <a href="https://nms.undp.org/" class="badge sf-nms"></a>
+    <a href="https://7steps.sfx.undp.org/" class="badge sf7s"></a>
+    <a href="https://undp.org" class="badge sf-s"></a>
+    <a href="https://un.org" class="badge sf-daas"></a>
+</body>
+</html>

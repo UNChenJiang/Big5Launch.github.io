@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF-DaaSGate</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .fullscreen-bg {
+            /* Full screen */
+            height: 100%;
+            width: 100%;
+            position: fixed; /* Use fixed or absolute depending on needs */
+            top: 0;
+            left: 0;
+            z-index: -1; /* Ensure it stays back */
+        }
+        .fullscreen-bg img {
+            /* Cover entire screen */
+            min-height: 100%;
+            min-width: 1024px; /* Set up a minimum width */
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+        /* New styles for using background */
+        .fullscreen-bg {
+            background: url('7Steps.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen-bg"></div>
+
+    <script>
+        // Redirect to the next page on click
+        document.addEventListener('click', function() {
+            window.location.href = 'https://app.powerbi.com/groups/me/reports/0b65dd20-dc76-406c-8a1e-617230568219/ReportSection92f9e9a3894aabdb4554?experience=power-bi';
+        });
+
+        // Automatically redirect after 10 seconds
+        setTimeout(function() {
+            window.location.href = 'https://app.powerbi.com/groups/me/reports/0b65dd20-dc76-406c-8a1e-617230568219/ReportSection92f9e9a3894aabdb4554?experience=power-bi';
+        }, 10000);
+    </script>
+</body>
+</html>
